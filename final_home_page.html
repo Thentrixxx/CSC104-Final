@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <style>
+        /* Everything in the background */
+        body{
+            background-color: rgb(255, 255, 255);
+        }
+        /* ------------------------------ */
+
+        /* The header and how it looks. */
+        header{
+            color: white;
+            background-color: black;
+        }
+
+        header > h2{
+            color:aquamarine
+        }
+        /* ------------------------------ */
+
+        /* Footer Related Tags */
+        footer{
+            color: white;
+            background-color: black;
+        }
+        /* ------------------------------ */
+
+        /* Image Related Tags */
+        img{
+            border: 3px solid rgb(0, 0, 0);
+            height: 200px;
+            display: block;
+            margin: 0 auto;
+        }
+
+        img:hover{
+            opacity: 85%;
+        }
+        /* ------------------------------ */
+
+        /* General Tags */
+        h1{
+            font-family:Arial, Helvetica, sans-serif;
+            text-align: center;
+        }
+
+        h2{
+            font-family:Arial, Helvetica, sans-serif;
+            text-align: center;
+        }
+
+        p{
+            font-family:Arial, Helvetica, sans-serif;
+            font-size: large;
+            text-align: center;
+        }
+        /* ------------------------------ */
+
+        /* Menu Tags */
+        .menu_selection_1, .menu_selection_2{
+            justify-content: space-evenly;
+            padding: 1.5em;
+            margin:auto;
+            display:flex;
+        }
+
+        .menu_selection_1 > div, .menu_selection_2 > div{
+            padding: 1em;
+            background-color: rgb(236, 188, 188);
+        }
+        /* ------------------------------ */
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Welcome to my Website!</h1>
+    </header>
+
+    <main>
+        <nav>
+            <div class="menu_selection_1">
+                <div>
+                    <h2>Anime</h2>
+                    <a href="final_anime_review.html">
+                        <img src="images/anime_navigation_image.png" alt="Navigate to Anime Review">
+                    </a>
+                    <p>This is where you can look at my anime reviews and recommendations!</p>
+                </div>
+                <div>
+                    <h2>Manga</h2>
+                    <a href="final_manga_review.html">
+                        <img src="images/manga_navigation_image.png" alt="Navigate to Manga Review">
+                    </a>
+                    <p>This is where you can look at my manga reviews and recommendations!</p>
+                </div>
+            </div>
+
+            <div class="menu_selection_2">
+                <div>
+                    <h2>Recommendation Form</h2>
+                    <a href="final_recommendations_form.html">
+                        <img src="images/recommendation_navigation_image.png" alt="Navigate to Recommendation Form">
+                    </a>
+                    <p>This is where you can recommend me anime and manga to watch or read.</p>
+                </div>
+            </div>
+        </nav>
+    </main>
+
+    <footer>
+        <h2>Thanks for visiting!</h2>
+    </footer>
+</body>
+</html>
