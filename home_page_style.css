@@ -1,0 +1,93 @@
+/* Everything in the background */
+body{
+    margin: 0;
+    padding: 0;
+    background-image: linear-gradient(to right,rgb(255, 189, 67), rgb(232, 255, 131));
+}
+/* ------------------------------ */
+
+/* The header and how it looks. */
+header{
+    color: white;
+    background-color: black;
+    padding: 10px;
+    margin: 0;
+}
+
+header > h2{
+    color:aquamarine
+}
+/* ------------------------------ */
+
+/* Footer Related Tags */
+footer{
+    color: white;
+    background-color: black;
+    padding: 10px;
+    margin: 0;
+}
+/* ------------------------------ */
+
+/* Image Related Tags */
+img{
+    border: 4px solid rgb(0, 0, 0);
+    height: 200px;
+    display: block;
+    margin: 0 auto;
+}
+
+img:hover{
+    opacity: 85%;
+}
+/* ------------------------------ */
+
+/* General Tags */
+h1{
+    font-family:Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+h2{
+    font-family:Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+p{
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: large;
+    text-align: center;
+    margin: 2 auto;
+    max-width: 380px;
+}
+/* ------------------------------ */
+
+/* Menu Tags */
+.menu_selection_1, .menu_selection_2{
+    justify-content: space-evenly;
+    padding: 1.5em;
+    margin:auto;
+    display:flex;
+}
+
+.menu_selection_1 > div, .menu_selection_2 > div{
+    padding: 1em;
+    background-color:rgba(0, 225, 255, 0.103);
+    border-radius: 10%;
+}
+/* ------------------------------ */
+
+@media (width <= 950px) {
+    .menu_selection_1, .menu_selection_2{
+        justify-content: space-evenly;
+        padding: 1.5em;
+        display:flex;
+        flex-direction: column;
+        gap: 50px
+    }
+
+    .menu_selection_1 > div, .menu_selection_2 > div{
+        padding: 1em;
+        background-color:rgba(0, 225, 255, 0.103);
+        border-radius: 10%;
+    }
+}
