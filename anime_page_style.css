@@ -1,0 +1,232 @@
+
+body{
+    margin: 0;
+    padding: 0;
+    background-image: linear-gradient(to right, rgb(125, 245, 151), rgb(134, 230, 247));
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Header Content */
+header{
+    color: white;
+    background-color: black;
+    padding: 10px;
+    margin: 0;
+}
+/* ---------------- */
+
+/* Footer Content */
+footer{
+    color: white;
+    background-color: black;
+    padding: 10px;
+    margin: 0;
+    
+    position: absolute;
+    bottom: 0 auto;
+    left: 0;
+    right: 0;
+}
+/* -------------- */
+
+/* General Text Elements */
+h1{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+h2{
+    text-align: center;
+}
+
+h3{
+    text-align: center;
+    font-size: x-large;
+}
+
+p{
+    font-size: large;
+    text-align: center;
+    margin: 2 auto;
+    max-width: 380px;
+}
+/* -------------- */
+
+/* Flexbox Items */
+/* Dividing each anime section to have its own background. */
+.section_one{
+    background-image: linear-gradient(to right, rgb(125, 245, 151), rgb(134, 230, 247));
+}
+
+.section_one > .review > .flex_text{
+    background-image: linear-gradient(to right, rgb(217, 205, 115), rgb(248, 223, 125));
+}
+
+.section_two{
+    background-image: linear-gradient(to right, rgb(217, 217, 115), rgb(248, 203, 125));
+}
+
+.section_two > .review > .flex_text{
+    background-image: linear-gradient(to right, rgb(217, 115, 212), rgb(182, 125, 248));
+}
+
+.review{
+    justify-content:center;
+    padding: 3em;
+    margin:auto;
+    display:flex;
+}
+
+.review > div{
+    padding: 1em;
+    border-radius: 2%;
+    align-items: center;
+    margin: auto;
+}
+/* -------- */
+
+/* Anime Rating Items */
+.rating_one{
+    color: rgb(220, 0, 0);
+}
+
+.rating_two{
+    color: rgb(220, 42, 0);
+}
+
+.rating_three{
+    color: rgb(220, 84, 0);
+}
+
+.rating_four{
+    color: rgb(220, 126, 0);
+}
+
+.rating_five{
+    color: rgb(220, 168, 0);
+}
+
+.rating_six{
+    color: rgb(205, 220, 0);
+}
+
+.rating_seven{
+    color: rgb(172, 220, 0);
+}
+
+.rating_eight{
+    color: rgb(114, 220, 0);
+}
+
+.rating_nine{
+    color: rgb(50, 220, 0);
+}
+
+.rating_ten{
+    color: rgb(0, 220, 0);
+}
+/* ----------- */
+
+/* Nav Items */
+.topnav {
+    padding: 12px;
+    text-align: center;
+}
+
+.topnav a {
+    background-color: black;
+    align-items: center;
+    color: white;
+    text-align: center;
+    padding: 12px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+/* Making the left most nav item have a rounded border. */
+.topnav > .topnav_one{
+    border-bottom-left-radius: 1em;
+}
+
+/* Making the right most nav item have a rounded border. */
+.topnav > .topnav_four{
+    border-bottom-right-radius: 1em;
+}
+
+/* These four are to make the hover of the nav items have different colors. */
+.topnav_one:hover {
+    background-image: linear-gradient(to right, rgb(255, 210, 210), rgb(255, 255, 185));
+    color: black;
+}
+
+.topnav_two:hover {
+    background-image: linear-gradient(to right, rgb(255, 255, 185), rgb(193, 255, 185));
+    color: black;
+}
+
+.topnav_three:hover {
+    background-image: linear-gradient(to right, rgb(193, 255, 185), rgb(185, 242, 255));
+    color: black;
+}
+
+.topnav_four:hover {
+    background-image: linear-gradient(to right, rgb(185, 242, 255), rgb(249, 185, 255));
+    color: black;
+}
+/* ----------- */
+
+/* Image Settings */
+img{
+    border: 4px solid rgb(0, 0, 0);
+    height: 300px;
+    display: block;
+    margin: 0 auto;
+}
+
+.link_image:hover{
+    opacity: 85%;
+}
+/* ------------- */
+/* For being smaller */
+@media (width <= 1100px) {
+    .review{
+        justify-content: space-evenly;
+        padding: 1.5em;
+        display:flex;
+        flex-direction: column;
+        gap: 50px;
+    }
+
+    .review > div{
+        padding: 1em;
+        background-color:rgba(0, 225, 255, 0.103);
+        border-radius: 10%;
+        align-self: center;
+    }
+}
+
+@media (width <= 640px){
+    img{
+        border: 4px solid rgb(0, 0, 0);
+        height: 200px;
+        display: block;
+        margin: 0 auto;
+    }
+
+    /* Nav Items */
+    .topnav {
+        padding: 9px;
+        text-align: center;
+    }
+
+    .topnav a {
+        background-color: black;
+        align-items: center;
+        color: white;
+        text-align: center;
+        padding: 12px;
+        text-decoration: none;
+        font-size: 12px;
+    }
+}
+/* ------------ */
