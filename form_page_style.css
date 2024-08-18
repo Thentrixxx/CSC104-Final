@@ -1,8 +1,7 @@
-
 body{
     margin: 0;
     padding: 0;
-    background-image: linear-gradient(to right, rgb(125, 245, 219), rgb(134, 187, 247));
+    background-image: linear-gradient(to right, rgb(234, 255, 142), rgb(137, 238, 124));
     font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -23,7 +22,7 @@ footer{
     margin: 0;
     
     position: absolute;
-    bottom: 0 auto;
+    bottom: 0;
     left: 0;
     right: 0;
 }
@@ -50,82 +49,6 @@ p{
     margin: 2 auto;
     max-width: 380px;
 }
-/* -------------- */
-
-/* Flexbox Items */
-/* Dividing each anime section to have its own background. */
-.section_one{
-    background-image: linear-gradient(to right, rgb(125, 245, 219), rgb(134, 187, 247));
-}
-
-.section_one > .review > .flex_text{
-    background-image: linear-gradient(to right, rgb(217, 205, 115), rgb(248, 223, 125));
-}
-
-.section_two{
-    background-image: linear-gradient(to right, rgb(34, 60, 90), rgb(35, 36, 77));
-}
-
-.section_two > .review > .flex_text{
-    background-image: linear-gradient(to right, rgb(217, 115, 115), rgb(248, 144, 125));
-}
-
-.review{
-    justify-content:center;
-    padding: 3em;
-    margin:auto;
-    display:flex;
-}
-
-.review > div{
-    padding: 1em;
-    border-radius: 2%;
-    align-items: center;
-    margin: auto;
-}
-/* -------- */
-
-/* Anime Rating Items */
-.rating_one{
-    color: rgb(220, 0, 0);
-}
-
-.rating_two{
-    color: rgb(220, 42, 0);
-}
-
-.rating_three{
-    color: rgb(220, 84, 0);
-}
-
-.rating_four{
-    color: rgb(220, 126, 0);
-}
-
-.rating_five{
-    color: rgb(220, 168, 0);
-}
-
-.rating_six{
-    color: rgb(205, 220, 0);
-}
-
-.rating_seven{
-    color: rgb(172, 220, 0);
-}
-
-.rating_eight{
-    color: rgb(114, 220, 0);
-}
-
-.rating_nine{
-    color: rgb(50, 220, 0);
-}
-
-.rating_ten{
-    color: rgb(0, 220, 0);
-}
-/* ----------- */
 
 /* Nav Items */
 .topnav {
@@ -175,44 +98,58 @@ p{
 }
 /* ----------- */
 
-/* Image Settings */
-img{
-    border: 4px solid rgb(0, 0, 0);
-    height: 300px;
+/* Form Items */
+form{
+    max-width: 400px;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px black;
+    background-image: linear-gradient(to right, rgb(86, 216, 97), rgb(82, 212, 158));
+}
+
+input{
+    margin-bottom: 20px;
+    border-radius: 5px;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+input[type="text"], input[type="number"], textarea{
+    width: 60%;
+    border: 1px solid black;
+    background-image: linear-gradient(to right, rgb(255, 236, 236), rgb(255, 235, 211));
+}
+
+input[type="submit"], input[type="reset"]{
+    border: none;
+    background-image: linear-gradient(to right, rgb(220, 220, 255), rgb(255, 230, 255));
+    cursor: pointer;
     display: block;
-    margin: 0 auto;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: large;
+    display: inline;
+    align-self: center;
 }
 
-.link_image:hover{
-    opacity: 85%;
+input:focus{
+    outline: none;
+    border-color: rgb(150, 150, 150);
+    box-shadow: 0 0 5px black;
 }
-/* ------------- */
-/* For being smaller */
-@media (width <= 1100px) {
-    .review{
-        justify-content: space-evenly;
-        padding: 1.5em;
-        display:flex;
-        flex-direction: column;
-        gap: 50px;
-    }
 
-    .review > div{
-        padding: 1em;
-        background-color:rgba(0, 225, 255, 0.103);
-        border-radius: 10%;
-        align-self: center;
-    }
+label{
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+    box-sizing: border-box;
+    width: 70%;
+    padding: 10px;
+    font-size: larger;
 }
 
 @media (width <= 640px){
-    img{
-        border: 4px solid rgb(0, 0, 0);
-        height: 200px;
-        display: block;
-        margin: 0 auto;
-    }
-
     /* Nav Items */
     .topnav {
         padding: 9px;
@@ -229,4 +166,3 @@ img{
         font-size: 12px;
     }
 }
-/* ------------ */

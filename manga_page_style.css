@@ -1,8 +1,7 @@
-
 body{
     margin: 0;
     padding: 0;
-    background-image: linear-gradient(to right, rgb(125, 245, 219), rgb(134, 187, 247));
+    background-image: linear-gradient(to right, rgb(255, 238, 142), rgb(213, 238, 124));
     font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -55,19 +54,19 @@ p{
 /* Flexbox Items */
 /* Dividing each anime section to have its own background. */
 .section_one{
-    background-image: linear-gradient(to right, rgb(125, 245, 219), rgb(134, 187, 247));
+    background-image: linear-gradient(to right, rgb(255, 238, 142), rgb(213, 238, 124));
 }
 
 .section_one > .review > .flex_text{
-    background-image: linear-gradient(to right, rgb(217, 205, 115), rgb(248, 223, 125));
+    background-image: linear-gradient(to right, rgb(235, 235, 235), rgb(228, 228, 228));
 }
 
 .section_two{
-    background-image: linear-gradient(to right, rgb(34, 60, 90), rgb(35, 36, 77));
+    background-image: linear-gradient(to left, rgb(54, 107, 30), rgb(54, 77, 35));
 }
 
 .section_two > .review > .flex_text{
-    background-image: linear-gradient(to right, rgb(217, 115, 115), rgb(248, 144, 125));
+    background-image: linear-gradient(to right, rgb(211, 124, 124), rgb(202, 139, 128));
 }
 
 .review{

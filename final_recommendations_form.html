@@ -4,18 +4,67 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Recommendations Form</title>
+    <link href="form_page_style.css" rel="stylesheet">
 </head>
 <body>
     <header>
-
+        <h1>Recommendation Form</h1>
     </header>
 
     <main>
-        <p>Recommendations Page</p>
+        <div class="topnav">
+            <a class="topnav_one" href="final_home_page.html">
+                Home Page
+            </a>
+            <a class="topnav_two" href="final_anime_review.html">
+                Anime Review
+            </a>
+            <a class="topnav_three" href="final_manga_review.html">
+                Manga Review
+            </a>
+            <a class="topnav_four" href="final_recommendations_form.html">
+                Submission Form
+            </a>
+        </div>
+        <br>
+        <br>
+
+        <form name="frmApp" id="frmApp" action="#" method="get">
+            <!-- Label for the element -->
+            <label for="AnimeOrManga">Anime/Manga: </label>
+            <!-- Text input -->
+            <input type="text" id="animeOrManga" name="animeOrManga" placeholder="Type Anime or Manga" required>
+
+            <br>
+
+            <!-- Label for the element -->
+            <label for="Title">Series Title: </label>
+            <!-- Text input -->
+            <input type="text" id="Title" name="Title" placeholder="Series Name" required>
+
+            <br>
+
+            <!-- Label for the element -->
+            <label for="Genre">Series Genres: </label>
+            <!-- Text input -->
+            <input type="text" id="Genre" name="Genre" placeholder="Series Genres" required>
+
+            <br>
+
+            <!-- Label for the element -->
+            <label for="Count">Episode/Chapter Count: </label>
+            <!-- Text input -->
+            <input type="number" id="Count" name="Count" placeholder="Number of Episodes or Chapters" required>
+
+            <br>
+
+            <input type="submit" id="btnSubmit" name="btnSubmit" value="Submit Form">
+            <input type="reset" id="btnReset" name="btnReset" value="Clear Form">
+        </form>
     </main>
 
     <footer>
-        
+        <h2>Thanks for visiting!</h2>
     </footer>
 </body>
 </html>
